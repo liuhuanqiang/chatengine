@@ -17,16 +17,80 @@
 
 package auth
 
+import (
+	"encoding/json"
+	"io/ioutil"
+	"net/http"
+	"os"
+
+	"github.com/golang/glog"
+)
+
 // TODO(@benqi): impl sendSms
 
-type SendSmsF func(phoneNumber, code, codeHash string, sentCodeType int) (error)
+type SendSmsF func(phoneNumber, code, codeHash string, sentCodeType int) error
 
 func sendSms(phoneNumber, code, codeHash string, sentCodeType int) error {
 	// TODO(@benqi): impl sendSms
+	url := "https://api.hnnnb.com/test/sms"
+	params := make(map[string]string)
+	params["code"] = code
+	params["type"] = "mobile"
+	params["country_code"] = "86"
+	params["receiver"] = phoneNumber
+	params["template"] = "register"
+
+	err := HttpGet(url, params, &respUserInfo)
+	if err != nil {
+		glog.Error(err.Error())
+		return err
+	}
+
 	return nil
 }
 
 func getSendSmsFunc() SendSmsF {
-	// return sendSms
+
+	return sendSms
+	//return nil
+}
+
+func HttpGet(link string, params map[string]string, resp interface{}) error {
+	glog.Infof("Http Get Request, url:", link, "params:", params)
+
+	req, err := http.NewRequest("GET", link, nil)
+	if err != nil {
+		glog.Error(err.Error())
+		os.Exit(1)
+	}
+
+	q := req.URL.Query()
+	if params != nil {
+		for k, v := range params {
+			q.Add(k, v)
+		}
+	}
+
+	req.URL.RawQuery = q.Encode()
+
+	response, err := http.Get(req.URL.String())
+	if err != nil {
+		glog.Error(err.Error())
+		return err
+	}
+
+	defer response.Body.Close()
+	body, err := ioutil.ReadAll(response.Body)
+	if err != nil {
+		glog.Error(err.Error())
+		return err
+	}
+
+	err = json.Unmarshal(body, &resp)
+	if err != nil {
+		glog.Error(err.Error())
+		return err
+	}
+
 	return nil
 }
