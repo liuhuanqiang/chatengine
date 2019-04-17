@@ -19,6 +19,7 @@ package auth
 
 import (
 	"encoding/json"
+	"errors"
 	"io/ioutil"
 	"net/http"
 	"os"
@@ -40,10 +41,19 @@ func sendSms(phoneNumber, code, codeHash string, sentCodeType int) error {
 	params["receiver"] = phoneNumber
 	params["template"] = "register"
 
-	err := HttpGet(url, params, &respUserInfo)
+	type Resp struct {
+		Code int    `json:"code"`
+		Msg  string `json:"msg"`
+	}
+	var resp Resp
+	err := HttpGet(url, params, &resp)
 	if err != nil {
 		glog.Error(err.Error())
 		return err
+	}
+	if resp.Code != 200 {
+		glog.Error("sms send fail")
+		return errors.New("sms send fail")
 	}
 
 	return nil
