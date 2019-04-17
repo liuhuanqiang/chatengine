@@ -18,7 +18,7 @@
 package model
 
 import (
-	"github.com/nebula-chat/chatengine/mtproto"
+	"github.com/liuhuanqiang/chatengine/mtproto"
 )
 
 type LangPacks struct {

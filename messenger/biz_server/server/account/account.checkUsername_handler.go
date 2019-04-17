@@ -20,11 +20,11 @@ package account
 import (
 	"github.com/golang/glog"
 	"golang.org/x/net/context"
-	"github.com/nebula-chat/chatengine/pkg/util"
-	"github.com/nebula-chat/chatengine/pkg/grpc_util"
-	"github.com/nebula-chat/chatengine/pkg/logger"
-	"github.com/nebula-chat/chatengine/mtproto"
-	"github.com/nebula-chat/chatengine/messenger/biz_server/biz/core/username"
+	"github.com/liuhuanqiang/chatengine/pkg/util"
+	"github.com/liuhuanqiang/chatengine/pkg/grpc_util"
+	"github.com/liuhuanqiang/chatengine/pkg/logger"
+	"github.com/liuhuanqiang/chatengine/mtproto"
+	"github.com/liuhuanqiang/chatengine/messenger/biz_server/biz/core/username"
 )
 
 // account.checkUsername#2714d86c username:string = Bool;

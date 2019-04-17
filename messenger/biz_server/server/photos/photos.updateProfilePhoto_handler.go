@@ -19,11 +19,11 @@ package photos
 
 import (
 	"github.com/golang/glog"
-	"github.com/nebula-chat/chatengine/pkg/grpc_util"
-	"github.com/nebula-chat/chatengine/pkg/logger"
-	"github.com/nebula-chat/chatengine/mtproto"
-	photo2 "github.com/nebula-chat/chatengine/messenger/biz_server/biz/core/photo"
-	"github.com/nebula-chat/chatengine/service/document/client"
+	"github.com/liuhuanqiang/chatengine/pkg/grpc_util"
+	"github.com/liuhuanqiang/chatengine/pkg/logger"
+	"github.com/liuhuanqiang/chatengine/mtproto"
+	photo2 "github.com/liuhuanqiang/chatengine/messenger/biz_server/biz/core/photo"
+	"github.com/liuhuanqiang/chatengine/service/document/client"
 	"golang.org/x/net/context"
 )
 

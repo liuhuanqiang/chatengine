@@ -20,7 +20,7 @@ package idgen
 import (
 	"errors"
 	"github.com/bwmarrin/snowflake"
-	"github.com/nebula-chat/chatengine/pkg/util"
+	"github.com/liuhuanqiang/chatengine/pkg/util"
 	"github.com/golang/glog"
 )
 

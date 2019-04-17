@@ -18,7 +18,7 @@
 package service_discovery
 
 import (
-	"github.com/nebula-chat/chatengine/pkg/util"
+	"github.com/liuhuanqiang/chatengine/pkg/util"
 )
 
 type ServiceDiscoveryServerConfig struct {

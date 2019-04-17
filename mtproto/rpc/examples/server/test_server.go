@@ -21,9 +21,9 @@ import (
 	"flag"
 	"fmt"
 	"github.com/BurntSushi/toml"
-	"github.com/nebula-chat/chatengine/pkg/util"
-	"github.com/nebula-chat/chatengine/pkg/net2"
-	"github.com/nebula-chat/chatengine/mtproto/rpc"
+	"github.com/liuhuanqiang/chatengine/pkg/util"
+	"github.com/liuhuanqiang/chatengine/pkg/net2"
+	"github.com/liuhuanqiang/chatengine/mtproto/rpc"
 	"github.com/gogo/protobuf/proto"
 )
 

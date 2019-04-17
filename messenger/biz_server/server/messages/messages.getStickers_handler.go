@@ -20,9 +20,9 @@ package messages
 import (
     "github.com/golang/glog"
     "golang.org/x/net/context"
-    "github.com/nebula-chat/chatengine/pkg/grpc_util"
-    "github.com/nebula-chat/chatengine/pkg/logger"
-    "github.com/nebula-chat/chatengine/mtproto"
+    "github.com/liuhuanqiang/chatengine/pkg/grpc_util"
+    "github.com/liuhuanqiang/chatengine/pkg/logger"
+    "github.com/liuhuanqiang/chatengine/mtproto"
 )
 
 // messages.getStickers#43d4f2c emoticon:string hash:int = messages.Stickers;

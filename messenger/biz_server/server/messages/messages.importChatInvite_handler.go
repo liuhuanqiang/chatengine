@@ -20,13 +20,13 @@ package messages
 import (
     "github.com/golang/glog"
     "golang.org/x/net/context"
-    "github.com/nebula-chat/chatengine/pkg/grpc_util"
-    "github.com/nebula-chat/chatengine/pkg/logger"
-    "github.com/nebula-chat/chatengine/mtproto"
-    "github.com/nebula-chat/chatengine/messenger/biz_server/biz/core"
-    "github.com/nebula-chat/chatengine/messenger/biz_server/biz/core/message"
-    "github.com/nebula-chat/chatengine/messenger/biz_server/biz/core/update"
-    "github.com/nebula-chat/chatengine/messenger/biz_server/biz/base"
+    "github.com/liuhuanqiang/chatengine/pkg/grpc_util"
+    "github.com/liuhuanqiang/chatengine/pkg/logger"
+    "github.com/liuhuanqiang/chatengine/mtproto"
+    "github.com/liuhuanqiang/chatengine/messenger/biz_server/biz/core"
+    "github.com/liuhuanqiang/chatengine/messenger/biz_server/biz/core/message"
+    "github.com/liuhuanqiang/chatengine/messenger/biz_server/biz/core/update"
+    "github.com/liuhuanqiang/chatengine/messenger/biz_server/biz/base"
 )
 
 // messages.importChatInvite#6c50051c hash:string = Updates;

@@ -19,8 +19,8 @@ package document_client
 
 import (
 	"fmt"
-	"github.com/nebula-chat/chatengine/mtproto"
-	"github.com/nebula-chat/chatengine/service/nbfs/proto"
+	"github.com/liuhuanqiang/chatengine/mtproto"
+	"github.com/liuhuanqiang/chatengine/service/nbfs/proto"
 )
 
 type DocumentFacade interface {

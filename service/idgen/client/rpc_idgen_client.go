@@ -21,9 +21,9 @@ import (
 	"context"
 	"encoding/json"
 	"github.com/golang/glog"
-	"github.com/nebula-chat/chatengine/pkg/grpc_util"
-	"github.com/nebula-chat/chatengine/pkg/grpc_util/service_discovery"
-	"github.com/nebula-chat/chatengine/service/idgen/proto"
+	"github.com/liuhuanqiang/chatengine/pkg/grpc_util"
+	"github.com/liuhuanqiang/chatengine/pkg/grpc_util/service_discovery"
+	"github.com/liuhuanqiang/chatengine/service/idgen/proto"
 	"google.golang.org/grpc"
 	"fmt"
 )

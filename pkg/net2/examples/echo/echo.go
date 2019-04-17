@@ -19,9 +19,9 @@ package main
 
 import (
 	"github.com/golang/glog"
-	"github.com/nebula-chat/chatengine/pkg/util"
-	"github.com/nebula-chat/chatengine/pkg/net2"
-	"github.com/nebula-chat/chatengine/pkg/net2/codec"
+	"github.com/liuhuanqiang/chatengine/pkg/util"
+	"github.com/liuhuanqiang/chatengine/pkg/net2"
+	"github.com/liuhuanqiang/chatengine/pkg/net2/codec"
 	"net"
 )
 

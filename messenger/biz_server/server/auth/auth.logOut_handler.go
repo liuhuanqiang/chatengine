@@ -19,11 +19,11 @@ package auth
 
 import (
 	"github.com/golang/glog"
-	"github.com/nebula-chat/chatengine/pkg/grpc_util"
-	"github.com/nebula-chat/chatengine/pkg/logger"
-	"github.com/nebula-chat/chatengine/mtproto"
+	"github.com/liuhuanqiang/chatengine/pkg/grpc_util"
+	"github.com/liuhuanqiang/chatengine/pkg/logger"
+	"github.com/liuhuanqiang/chatengine/mtproto"
 	"golang.org/x/net/context"
-	"github.com/nebula-chat/chatengine/service/auth_session/client"
+	"github.com/liuhuanqiang/chatengine/service/auth_session/client"
 )
 
 // auth.logOut#5717da40 = Bool;

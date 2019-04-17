@@ -19,10 +19,10 @@ package photo
 
 import (
 	"github.com/golang/glog"
-	"github.com/nebula-chat/chatengine/pkg/util"
-	"github.com/nebula-chat/chatengine/pkg/mysql_client"
-	"github.com/nebula-chat/chatengine/service/document/biz/dal/dao/mysql_dao"
-	"github.com/nebula-chat/chatengine/service/idgen/client"
+	"github.com/liuhuanqiang/chatengine/pkg/util"
+	"github.com/liuhuanqiang/chatengine/pkg/mysql_client"
+	"github.com/liuhuanqiang/chatengine/service/document/biz/dal/dao/mysql_dao"
+	"github.com/liuhuanqiang/chatengine/service/idgen/client"
 )
 
 type photosDAO struct {

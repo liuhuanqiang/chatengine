@@ -19,9 +19,9 @@ package main
 
 import (
 	"flag"
-	"github.com/nebula-chat/chatengine/messenger/sync/server"
-	_ "github.com/nebula-chat/chatengine/mtproto"
-	"github.com/nebula-chat/chatengine/pkg/util"
+	"github.com/liuhuanqiang/chatengine/messenger/sync/server"
+	_ "github.com/liuhuanqiang/chatengine/mtproto"
+	"github.com/liuhuanqiang/chatengine/pkg/util"
 )
 
 func main() {

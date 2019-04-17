@@ -18,7 +18,7 @@
 package photo
 
 import (
-	"github.com/nebula-chat/chatengine/pkg/mysql_client"
+	"github.com/liuhuanqiang/chatengine/pkg/mysql_client"
 	"testing"
 )
 

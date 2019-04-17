@@ -21,8 +21,8 @@ import (
 	"fmt"
 	"github.com/golang/glog"
 	"github.com/jmoiron/sqlx"
-	"github.com/nebula-chat/chatengine/messenger/sync/biz/dal/dataobject"
-	"github.com/nebula-chat/chatengine/mtproto"
+	"github.com/liuhuanqiang/chatengine/messenger/sync/biz/dal/dataobject"
+	"github.com/liuhuanqiang/chatengine/mtproto"
 )
 
 type UserQtsUpdatesDAO struct {

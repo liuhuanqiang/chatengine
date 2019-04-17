@@ -18,11 +18,11 @@
 package account
 
 import (
-	"github.com/nebula-chat/chatengine/messenger/biz_server/biz/core"
-	"github.com/nebula-chat/chatengine/messenger/biz_server/biz/core/account"
-	"github.com/nebula-chat/chatengine/messenger/biz_server/biz/core/user"
-	"github.com/nebula-chat/chatengine/messenger/biz_server/biz/core/username"
-	"github.com/nebula-chat/chatengine/messenger/biz_server/biz/core/chat"
+	"github.com/liuhuanqiang/chatengine/messenger/biz_server/biz/core"
+	"github.com/liuhuanqiang/chatengine/messenger/biz_server/biz/core/account"
+	"github.com/liuhuanqiang/chatengine/messenger/biz_server/biz/core/user"
+	"github.com/liuhuanqiang/chatengine/messenger/biz_server/biz/core/username"
+	"github.com/liuhuanqiang/chatengine/messenger/biz_server/biz/core/chat"
 )
 
 type AccountServiceImpl struct {

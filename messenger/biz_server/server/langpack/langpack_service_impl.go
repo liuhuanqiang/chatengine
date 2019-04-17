@@ -19,8 +19,8 @@ package langpack
 
 import (
 	"github.com/BurntSushi/toml"
-	"github.com/nebula-chat/chatengine/messenger/biz_server/biz/core"
-	model2 "github.com/nebula-chat/chatengine/messenger/biz_server/server/langpack/model"
+	"github.com/liuhuanqiang/chatengine/messenger/biz_server/biz/core"
+	model2 "github.com/liuhuanqiang/chatengine/messenger/biz_server/server/langpack/model"
 )
 
 const (

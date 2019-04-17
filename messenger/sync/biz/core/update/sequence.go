@@ -18,7 +18,7 @@
 package update
 
 import (
-	"github.com/nebula-chat/chatengine/pkg/util"
+	"github.com/liuhuanqiang/chatengine/pkg/util"
 )
 
 const (

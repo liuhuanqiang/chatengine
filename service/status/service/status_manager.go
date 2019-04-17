@@ -19,7 +19,7 @@ package service
 
 import (
 	"container/list"
-	"github.com/nebula-chat/chatengine/service/status/proto"
+	"github.com/liuhuanqiang/chatengine/service/status/proto"
 	"sync"
 )
 

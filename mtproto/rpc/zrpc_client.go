@@ -22,12 +22,12 @@ import (
 	"math/rand"
 	"github.com/coreos/etcd/clientv3"
 	"github.com/golang/glog"
-	"github.com/nebula-chat/chatengine/pkg/grpc_util/load_balancer"
-	"github.com/nebula-chat/chatengine/pkg/net2"
-	"github.com/nebula-chat/chatengine/pkg/net2/watcher2"
-	"github.com/nebula-chat/chatengine/mtproto/rpc/brpc"
+	"github.com/liuhuanqiang/chatengine/pkg/grpc_util/load_balancer"
+	"github.com/liuhuanqiang/chatengine/pkg/net2"
+	"github.com/liuhuanqiang/chatengine/pkg/net2/watcher2"
+	"github.com/liuhuanqiang/chatengine/mtproto/rpc/brpc"
 	"github.com/gogo/protobuf/proto"
-	"github.com/nebula-chat/chatengine/mtproto"
+	"github.com/liuhuanqiang/chatengine/mtproto"
 )
 
 func init() {

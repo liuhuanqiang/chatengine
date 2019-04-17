@@ -18,12 +18,12 @@
 package contacts
 
 import (
-	"github.com/nebula-chat/chatengine/messenger/biz_server/biz/core"
-	"github.com/nebula-chat/chatengine/messenger/biz_server/biz/core/contact"
-	"github.com/nebula-chat/chatengine/messenger/biz_server/biz/core/user"
-	"github.com/nebula-chat/chatengine/messenger/biz_server/biz/core/username"
-	"github.com/nebula-chat/chatengine/messenger/biz_server/biz/core/chat"
-	"github.com/nebula-chat/chatengine/messenger/biz_server/biz/core/dialog"
+	"github.com/liuhuanqiang/chatengine/messenger/biz_server/biz/core"
+	"github.com/liuhuanqiang/chatengine/messenger/biz_server/biz/core/contact"
+	"github.com/liuhuanqiang/chatengine/messenger/biz_server/biz/core/user"
+	"github.com/liuhuanqiang/chatengine/messenger/biz_server/biz/core/username"
+	"github.com/liuhuanqiang/chatengine/messenger/biz_server/biz/core/chat"
+	"github.com/liuhuanqiang/chatengine/messenger/biz_server/biz/core/dialog"
 )
 
 type ContactsServiceImpl struct {

@@ -19,10 +19,10 @@ package account
 
 import (
 	"github.com/golang/glog"
-	"github.com/nebula-chat/chatengine/messenger/sync/sync_client"
-	"github.com/nebula-chat/chatengine/mtproto"
-	"github.com/nebula-chat/chatengine/pkg/grpc_util"
-	"github.com/nebula-chat/chatengine/pkg/logger"
+	"github.com/liuhuanqiang/chatengine/messenger/sync/sync_client"
+	"github.com/liuhuanqiang/chatengine/mtproto"
+	"github.com/liuhuanqiang/chatengine/pkg/grpc_util"
+	"github.com/liuhuanqiang/chatengine/pkg/logger"
 	"golang.org/x/net/context"
 	"time"
 )

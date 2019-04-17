@@ -21,9 +21,9 @@ import (
     "fmt"
     "github.com/golang/glog"
     "golang.org/x/net/context"
-    "github.com/nebula-chat/chatengine/pkg/grpc_util"
-    "github.com/nebula-chat/chatengine/pkg/logger"
-    "github.com/nebula-chat/chatengine/mtproto"
+    "github.com/liuhuanqiang/chatengine/pkg/grpc_util"
+    "github.com/liuhuanqiang/chatengine/pkg/logger"
+    "github.com/liuhuanqiang/chatengine/mtproto"
 )
 
 // updates.getChannelDifference#bb32d7c0 channel:InputChannel filter:ChannelMessagesFilter pts:int limit:int = updates.ChannelDifference;

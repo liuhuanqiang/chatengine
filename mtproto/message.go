@@ -23,7 +23,7 @@ import (
 	"encoding/hex"
 	"fmt"
 	"github.com/golang/glog"
-	"github.com/nebula-chat/chatengine/pkg/crypto"
+	"github.com/liuhuanqiang/chatengine/pkg/crypto"
 	"reflect"
 )
 

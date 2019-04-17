@@ -18,15 +18,15 @@
 package auth_session
 
 import (
-	"github.com/nebula-chat/chatengine/service/auth_session/biz/dal/dao/mysql_dao"
-	"github.com/nebula-chat/chatengine/pkg/mysql_client"
+	"github.com/liuhuanqiang/chatengine/service/auth_session/biz/dal/dao/mysql_dao"
+	"github.com/liuhuanqiang/chatengine/pkg/mysql_client"
 	"github.com/golang/glog"
 	"fmt"
-	"github.com/nebula-chat/chatengine/service/auth_session/biz/dal/dataobject"
+	"github.com/liuhuanqiang/chatengine/service/auth_session/biz/dal/dataobject"
 	"encoding/base64"
-	"github.com/nebula-chat/chatengine/mtproto"
+	"github.com/liuhuanqiang/chatengine/mtproto"
 	"time"
-	"github.com/nebula-chat/chatengine/pkg/util"
+	"github.com/liuhuanqiang/chatengine/pkg/util"
 	"math/rand"
 )
 

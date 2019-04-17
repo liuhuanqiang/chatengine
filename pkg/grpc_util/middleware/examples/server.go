@@ -21,7 +21,7 @@ import (
 	"net"
 	"log"
 	"golang.org/x/net/context"
-	"github.com/nebula-chat/chatengine/pkg/grpc_util/middleware/examples/helloworld"
+	"github.com/liuhuanqiang/chatengine/pkg/grpc_util/middleware/examples/helloworld"
 	"google.golang.org/grpc"
 )
 
