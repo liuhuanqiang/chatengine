@@ -18,11 +18,11 @@
 package server
 
 import (
-	"github.com/nebula-chat/chatengine/pkg/util"
-	"github.com/nebula-chat/chatengine/pkg/grpc_util"
-	"github.com/nebula-chat/chatengine/mtproto/rpc"
 	"github.com/gogo/protobuf/proto"
 	"github.com/golang/glog"
+	"github.com/liuhuanqiang/chatengine/mtproto/rpc"
+	"github.com/liuhuanqiang/chatengine/pkg/grpc_util"
+	"github.com/liuhuanqiang/chatengine/pkg/util"
 )
 
 func sendSessionDataByConnID(connID uint64, cntl *zrpc.ZRpcController, msg proto.Message) error {
@@ -83,4 +83,3 @@ func setOfflineTTL(userId int32, authKeyId int64, serverId int32) {
 		serverId)
 	util.GAppInstance.(*SessionServer).status.SetSessionOfflineTTL(userId, serverId, authKeyId)
 }
-

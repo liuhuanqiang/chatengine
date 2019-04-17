@@ -18,8 +18,8 @@
 package account
 
 import (
-	"github.com/nebula-chat/chatengine/messenger/biz_server/biz/dal/dataobject"
 	"github.com/golang/glog"
+	"github.com/liuhuanqiang/chatengine/messenger/biz_server/biz/dal/dataobject"
 )
 
 // not found, return 0

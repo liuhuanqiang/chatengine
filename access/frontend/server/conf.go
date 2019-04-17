@@ -20,9 +20,10 @@ package server
 import (
 	"flag"
 	"fmt"
+
 	"github.com/BurntSushi/toml"
-	"github.com/nebula-chat/chatengine/mtproto"
-	"github.com/nebula-chat/chatengine/mtproto/rpc"
+	"github.com/liuhuanqiang/chatengine/mtproto"
+	"github.com/liuhuanqiang/chatengine/mtproto/rpc"
 )
 
 var (

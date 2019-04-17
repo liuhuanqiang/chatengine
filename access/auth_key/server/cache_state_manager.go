@@ -19,12 +19,13 @@
 package server
 
 import (
+	"encoding/hex"
 	"fmt"
 	"time"
+
 	"github.com/golang/glog"
-	"github.com/nebula-chat/chatengine/mtproto"
-	"github.com/nebula-chat/chatengine/pkg/cache"
-	"encoding/hex"
+	"github.com/liuhuanqiang/chatengine/mtproto"
+	"github.com/liuhuanqiang/chatengine/pkg/cache"
 )
 
 const (
@@ -66,7 +67,7 @@ func genCacheStateKey(nonce, serverNonce []byte) string {
 	return fmt.Sprintf("%s_%s@%s", kCacheSaltPrefix, hex.EncodeToString(nonce), hex.EncodeToString(serverNonce))
 }
 
-func PutCacheState(nonce, serverNonce []byte, state *mtproto.HandshakeContext_Data) (error) {
+func PutCacheState(nonce, serverNonce []byte, state *mtproto.HandshakeContext_Data) error {
 	k := genCacheStateKey(nonce, serverNonce)
 	glog.Info("put state key: (", k, ")")
 	return cacheStates.cache.Put(genCacheStateKey(nonce, serverNonce), state, time.Duration(5*time.Second))

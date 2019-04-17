@@ -19,7 +19,8 @@ package peer
 
 import (
 	"fmt"
-	"github.com/nebula-chat/chatengine/mtproto"
+
+	"github.com/liuhuanqiang/chatengine/mtproto"
 )
 
 const (

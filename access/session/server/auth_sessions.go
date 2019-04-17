@@ -19,13 +19,14 @@ package server
 
 import (
 	"fmt"
-	"github.com/golang/glog"
-	"github.com/nebula-chat/chatengine/mtproto"
-	"github.com/nebula-chat/chatengine/mtproto/rpc"
-	"github.com/nebula-chat/chatengine/pkg/queue2"
-	"github.com/nebula-chat/chatengine/pkg/sync2"
 	"sync"
 	"time"
+
+	"github.com/golang/glog"
+	"github.com/liuhuanqiang/chatengine/mtproto"
+	"github.com/liuhuanqiang/chatengine/mtproto/rpc"
+	"github.com/liuhuanqiang/chatengine/pkg/queue2"
+	"github.com/liuhuanqiang/chatengine/pkg/sync2"
 )
 
 // import "container/list"

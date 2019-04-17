@@ -19,15 +19,16 @@ package message
 
 import (
 	"fmt"
+	"time"
+
 	"github.com/gogo/protobuf/proto"
 	"github.com/golang/glog"
-	"github.com/nebula-chat/chatengine/messenger/biz_server/biz/base"
-	"github.com/nebula-chat/chatengine/messenger/biz_server/biz/core"
-	"github.com/nebula-chat/chatengine/messenger/biz_server/biz/dal/dataobject"
-	"github.com/nebula-chat/chatengine/messenger/sync/sync_client"
-	"github.com/nebula-chat/chatengine/mtproto"
-	base2 "github.com/nebula-chat/chatengine/pkg/util"
-	"time"
+	"github.com/liuhuanqiang/chatengine/messenger/biz_server/biz/base"
+	"github.com/liuhuanqiang/chatengine/messenger/biz_server/biz/core"
+	"github.com/liuhuanqiang/chatengine/messenger/biz_server/biz/dal/dataobject"
+	"github.com/liuhuanqiang/chatengine/messenger/sync/sync_client"
+	"github.com/liuhuanqiang/chatengine/mtproto"
+	base2 "github.com/liuhuanqiang/chatengine/pkg/util"
 )
 
 type OnBoxCallback func(int32, *MessageBox2)

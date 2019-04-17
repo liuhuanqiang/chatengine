@@ -19,7 +19,8 @@ package server
 
 import (
 	"fmt"
-	"github.com/nebula-chat/chatengine/mtproto"
+
+	"github.com/liuhuanqiang/chatengine/mtproto"
 )
 
 // invokeAfterMsg#cb9f372d {X:Type} msg_id:long query:!X = X;
@@ -105,7 +106,7 @@ func NewInitConnectionExt(layer int32, initConnection *mtproto.TLInitConnection)
 	query := dbuf.Object()
 
 	return &TLInitConnectionExt{
-		Layer:			layer,
+		Layer:          layer,
 		ApiId:          initConnection.ApiId,
 		DeviceMode:     initConnection.DeviceModel,
 		SystemVersion:  initConnection.SystemVersion,
@@ -123,7 +124,7 @@ func NewInitConnectionExtByLayer68(layer int32, initConnection *mtproto.TLInitCo
 	query := dbuf.Object()
 
 	return &TLInitConnectionExt{
-		Layer:			layer,
+		Layer:          layer,
 		ApiId:          initConnection.ApiId,
 		DeviceMode:     initConnection.DeviceModel,
 		SystemVersion:  initConnection.SystemVersion,

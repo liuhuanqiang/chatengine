@@ -19,8 +19,9 @@ package main
 
 import (
 	"flag"
-	"github.com/nebula-chat/chatengine/access/session/server"
-	"github.com/nebula-chat/chatengine/pkg/util"
+
+	"github.com/liuhuanqiang/chatengine/access/session/server"
+	"github.com/liuhuanqiang/chatengine/pkg/util"
 )
 
 /*

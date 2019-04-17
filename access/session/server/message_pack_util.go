@@ -18,9 +18,10 @@
 package server
 
 import (
-	"github.com/nebula-chat/chatengine/mtproto"
-	"github.com/golang/glog"
 	"encoding/hex"
+
+	"github.com/golang/glog"
+	"github.com/liuhuanqiang/chatengine/mtproto"
 )
 
 type messagePackUtil struct {

@@ -19,9 +19,10 @@ package account
 
 import (
 	"encoding/json"
+
 	"github.com/golang/glog"
-	"github.com/nebula-chat/chatengine/messenger/biz_server/biz/dal/dataobject"
-	"github.com/nebula-chat/chatengine/mtproto"
+	"github.com/liuhuanqiang/chatengine/messenger/biz_server/biz/dal/dataobject"
+	"github.com/liuhuanqiang/chatengine/mtproto"
 )
 
 /*

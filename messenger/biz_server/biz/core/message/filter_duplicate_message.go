@@ -18,17 +18,18 @@
 package message
 
 import (
-	"github.com/gomodule/redigo/redis"
 	"fmt"
+
 	"github.com/golang/glog"
-	"github.com/nebula-chat/chatengine/mtproto"
 	"github.com/golang/protobuf/proto"
+	"github.com/gomodule/redigo/redis"
+	"github.com/liuhuanqiang/chatengine/mtproto"
 )
 
 const (
-	duplicateMessageId      = "duplicate_message_id"
-	duplicateMessageData    = "duplicate_message_data"
-	expireTimeout           = 60 // 60s
+	duplicateMessageId   = "duplicate_message_id"
+	duplicateMessageData = "duplicate_message_data"
+	expireTimeout        = 60 // 60s
 )
 
 func makeDuplicateMessageKey(prefix string, senderUserId int32, clientRandomId int64) string {

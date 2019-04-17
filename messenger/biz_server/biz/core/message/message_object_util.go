@@ -18,10 +18,11 @@
 package message
 
 import (
-	"github.com/golang/glog"
-	"github.com/nebula-chat/chatengine/mtproto"
 	"regexp"
 	"strings"
+
+	"github.com/golang/glog"
+	"github.com/liuhuanqiang/chatengine/mtproto"
 )
 
 // updateShortMessage#914fbf11 flags:# out:flags.1?true mentioned:flags.4?true media_unread:flags.5?true silent:flags.13?true id:int user_id:int message:string pts:int pts_count:int date:int fwd_from:flags.2?MessageFwdHeader via_bot_id:flags.11?int reply_to_msg_id:flags.3?int entities:flags.7?Vector<MessageEntity> = Updates;
@@ -177,7 +178,7 @@ func PickAllIDListByMessages(messageList []*mtproto.Message) (userIdList, chatId
 		chatIdList = make([]int32, 0, len(messageList))
 		channelIdList = make([]int32, 0, len(messageList))
 
-		AppendID := func (idList []int32, id int32) []int32 {
+		AppendID := func(idList []int32, id int32) []int32 {
 			for _, i := range idList {
 				if i == id {
 					return idList

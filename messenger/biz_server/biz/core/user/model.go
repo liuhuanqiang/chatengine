@@ -19,9 +19,9 @@ package user
 
 import (
 	"github.com/golang/glog"
-	"github.com/nebula-chat/chatengine/messenger/biz_server/biz/core"
-	"github.com/nebula-chat/chatengine/messenger/biz_server/biz/dal/dao"
-	"github.com/nebula-chat/chatengine/messenger/biz_server/biz/dal/dao/mysql_dao"
+	"github.com/liuhuanqiang/chatengine/messenger/biz_server/biz/core"
+	"github.com/liuhuanqiang/chatengine/messenger/biz_server/biz/dal/dao"
+	"github.com/liuhuanqiang/chatengine/messenger/biz_server/biz/dal/dao/mysql_dao"
 )
 
 type usersDAO struct {
@@ -38,12 +38,12 @@ type usersDAO struct {
 }
 
 type UserModel struct {
-	dao                   *usersDAO
-	contactCallback       core.ContactCallback
-	photoCallback         core.PhotoCallback
-	usernameCallback      core.UsernameCallback
+	dao              *usersDAO
+	contactCallback  core.ContactCallback
+	photoCallback    core.PhotoCallback
+	usernameCallback core.UsernameCallback
 	// notifySettingCallback core.NotifySettingCallback
-	accountCallback       core.AccountCallback
+	accountCallback core.AccountCallback
 }
 
 func (m *UserModel) InstallModel() {

@@ -19,9 +19,9 @@ package message
 
 import (
 	"github.com/golang/glog"
-	"github.com/nebula-chat/chatengine/messenger/biz_server/biz/base"
-	"github.com/nebula-chat/chatengine/mtproto"
-	base2 "github.com/nebula-chat/chatengine/pkg/util"
+	"github.com/liuhuanqiang/chatengine/messenger/biz_server/biz/base"
+	"github.com/liuhuanqiang/chatengine/mtproto"
+	base2 "github.com/liuhuanqiang/chatengine/pkg/util"
 )
 
 const (

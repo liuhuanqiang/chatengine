@@ -20,8 +20,9 @@ package account
 import (
 	"bytes"
 	"encoding/hex"
+
 	"github.com/golang/glog"
-	"github.com/nebula-chat/chatengine/mtproto"
+	"github.com/liuhuanqiang/chatengine/mtproto"
 )
 
 /*
@@ -161,7 +162,7 @@ func (m *AccountModel) CheckRecoverCode(userId int32, code string) error {
 
 // SESSION_PASSWORD_NEEDED
 func (m *AccountModel) CheckSessionPasswordNeeded(userId int32) bool {
-	// TODO(@benqi):  仅仅从数据库里取state字段
+	// TODO(@benqi):  仅仅从数据库里取state字段
 	do := m.dao.UserPasswordsDAO.SelectByUserId(userId)
 	if do == nil {
 		return false

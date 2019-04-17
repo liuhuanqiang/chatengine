@@ -18,12 +18,13 @@
 package dialog
 
 import (
-	"github.com/golang/glog"
-	"github.com/nebula-chat/chatengine/messenger/biz_server/biz/core"
-	"github.com/nebula-chat/chatengine/messenger/biz_server/biz/dal/dao"
-	"github.com/nebula-chat/chatengine/messenger/biz_server/biz/dal/dao/mysql_dao"
-	"github.com/nebula-chat/chatengine/messenger/biz_server/biz/dal/dataobject"
 	"time"
+
+	"github.com/golang/glog"
+	"github.com/liuhuanqiang/chatengine/messenger/biz_server/biz/core"
+	"github.com/liuhuanqiang/chatengine/messenger/biz_server/biz/dal/dao"
+	"github.com/liuhuanqiang/chatengine/messenger/biz_server/biz/dal/dao/mysql_dao"
+	"github.com/liuhuanqiang/chatengine/messenger/biz_server/biz/dal/dataobject"
 )
 
 type dialogsDAO struct {

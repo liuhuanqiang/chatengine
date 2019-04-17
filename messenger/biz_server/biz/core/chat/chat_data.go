@@ -18,15 +18,16 @@
 package chat
 
 import (
-	"github.com/golang/glog"
-	"github.com/nebula-chat/chatengine/messenger/biz_server/biz/base"
-	"github.com/nebula-chat/chatengine/messenger/biz_server/biz/core"
-	"github.com/nebula-chat/chatengine/messenger/biz_server/biz/dal/dataobject"
-	"github.com/nebula-chat/chatengine/mtproto"
-	"github.com/nebula-chat/chatengine/pkg/random2"
-	base2 "github.com/nebula-chat/chatengine/pkg/util"
 	"math/rand"
 	"time"
+
+	"github.com/golang/glog"
+	"github.com/liuhuanqiang/chatengine/messenger/biz_server/biz/base"
+	"github.com/liuhuanqiang/chatengine/messenger/biz_server/biz/core"
+	"github.com/liuhuanqiang/chatengine/messenger/biz_server/biz/dal/dataobject"
+	"github.com/liuhuanqiang/chatengine/mtproto"
+	"github.com/liuhuanqiang/chatengine/pkg/random2"
+	base2 "github.com/liuhuanqiang/chatengine/pkg/util"
 )
 
 const (

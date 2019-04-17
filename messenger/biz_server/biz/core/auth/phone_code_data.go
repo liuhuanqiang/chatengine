@@ -19,12 +19,13 @@ package auth
 
 import (
 	"fmt"
-	"github.com/golang/glog"
-	"github.com/nebula-chat/chatengine/messenger/biz_server/biz/dal/dataobject"
-	"github.com/nebula-chat/chatengine/mtproto"
-	"github.com/nebula-chat/chatengine/pkg/crypto"
-	"github.com/nebula-chat/chatengine/pkg/random2"
 	"time"
+
+	"github.com/golang/glog"
+	"github.com/liuhuanqiang/chatengine/messenger/biz_server/biz/dal/dataobject"
+	"github.com/liuhuanqiang/chatengine/mtproto"
+	"github.com/liuhuanqiang/chatengine/pkg/crypto"
+	"github.com/liuhuanqiang/chatengine/pkg/random2"
 )
 
 // TODO(@benqi): 当前测试环境code统一为"12345"

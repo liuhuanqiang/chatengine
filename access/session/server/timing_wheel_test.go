@@ -19,10 +19,11 @@ package server
 
 import (
 	"fmt"
-	"github.com/nebula-chat/chatengine/pkg/sync2"
 	"math/rand"
 	"testing"
 	"time"
+
+	"github.com/liuhuanqiang/chatengine/pkg/sync2"
 )
 
 func init() {

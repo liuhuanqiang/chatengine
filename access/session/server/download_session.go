@@ -18,12 +18,13 @@
 package server
 
 import (
-	"github.com/golang/glog"
-	"github.com/nebula-chat/chatengine/mtproto"
-	"github.com/nebula-chat/chatengine/mtproto/rpc"
-	"github.com/nebula-chat/chatengine/pkg/grpc_util"
 	"reflect"
 	"time"
+
+	"github.com/golang/glog"
+	"github.com/liuhuanqiang/chatengine/mtproto"
+	"github.com/liuhuanqiang/chatengine/mtproto/rpc"
+	"github.com/liuhuanqiang/chatengine/pkg/grpc_util"
 )
 
 type downloadSession struct {

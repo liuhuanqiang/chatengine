@@ -18,8 +18,8 @@
 package server
 
 import (
-	"github.com/nebula-chat/chatengine/mtproto/rpc"
-	"github.com/nebula-chat/chatengine/mtproto"
+	"github.com/liuhuanqiang/chatengine/mtproto"
+	"github.com/liuhuanqiang/chatengine/mtproto/rpc"
 )
 
 type unknownSession struct {
@@ -35,4 +35,3 @@ func (c *unknownSession) onMessageData(id ClientConnID, cntl *zrpc.ZRpcControlle
 		c.pendingMessages = []*pendingMessage{}
 	}
 }
-

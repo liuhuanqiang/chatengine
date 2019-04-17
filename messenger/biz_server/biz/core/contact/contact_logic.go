@@ -18,11 +18,12 @@
 package contact
 
 import (
-	"github.com/nebula-chat/chatengine/messenger/biz_server/biz/dal/dataobject"
-	"github.com/nebula-chat/chatengine/mtproto"
 	"time"
+
 	"github.com/golang/glog"
-	"github.com/nebula-chat/chatengine/messenger/biz_server/biz/base"
+	"github.com/liuhuanqiang/chatengine/messenger/biz_server/biz/base"
+	"github.com/liuhuanqiang/chatengine/messenger/biz_server/biz/dal/dataobject"
+	"github.com/liuhuanqiang/chatengine/mtproto"
 )
 
 //type contactUser struct {
@@ -136,7 +137,7 @@ func (c contactLogic) SearchContacts(q string, limit int32) ([]int32, []int32) {
 	// TODO(@benqi): 区分大小写
 
 	var (
-		userIdList []int32
+		userIdList    []int32
 		channelIdList []int32
 	)
 
@@ -176,9 +177,9 @@ type contactItem struct {
 
 func (c *contactLogic) ImportContacts(contacts []*mtproto.InputContact_Data) ([]*mtproto.ImportedContact, []*mtproto.PopularContact, []int32) {
 	var (
-		importedContacts = make([]*mtproto.ImportedContact, 0, len(contacts))
+		importedContacts  = make([]*mtproto.ImportedContact, 0, len(contacts))
 		popularContactMap = make(map[string]*mtproto.TLPopularContact, len(contacts))
-		updList = make([]int32, 0, len(contacts))
+		updList           = make([]int32, 0, len(contacts))
 	)
 
 	importContacts := make(map[string]*contactItem)

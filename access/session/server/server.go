@@ -19,17 +19,18 @@ package server
 
 import (
 	"fmt"
+	"sync"
+
 	"github.com/gogo/protobuf/proto"
 	"github.com/golang/glog"
-	"github.com/nebula-chat/chatengine/mtproto"
-	"github.com/nebula-chat/chatengine/mtproto/rpc"
-	"github.com/nebula-chat/chatengine/pkg/grpc_util"
-	"github.com/nebula-chat/chatengine/pkg/net2"
-	"github.com/nebula-chat/chatengine/pkg/redis_client"
-	"github.com/nebula-chat/chatengine/pkg/util"
-	"github.com/nebula-chat/chatengine/service/idgen/client"
-	"github.com/nebula-chat/chatengine/service/status/client"
-	"sync"
+	"github.com/liuhuanqiang/chatengine/mtproto"
+	"github.com/liuhuanqiang/chatengine/mtproto/rpc"
+	"github.com/liuhuanqiang/chatengine/pkg/grpc_util"
+	"github.com/liuhuanqiang/chatengine/pkg/net2"
+	"github.com/liuhuanqiang/chatengine/pkg/redis_client"
+	"github.com/liuhuanqiang/chatengine/pkg/util"
+	"github.com/liuhuanqiang/chatengine/service/idgen/client"
+	"github.com/liuhuanqiang/chatengine/service/status/client"
 )
 
 func init() {

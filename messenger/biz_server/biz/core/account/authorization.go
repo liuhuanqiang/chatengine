@@ -18,8 +18,9 @@
 package account
 
 import (
-	"github.com/nebula-chat/chatengine/mtproto"
 	"time"
+
+	"github.com/liuhuanqiang/chatengine/mtproto"
 )
 
 func (m *AccountModel) GetAuthorizationList(selfAuthKeyId int64, userId int32) []*mtproto.Authorization {

@@ -18,10 +18,11 @@
 package photo
 
 import (
-	"github.com/nebula-chat/chatengine/messenger/biz_server/biz/core"
-	"github.com/nebula-chat/chatengine/mtproto"
-	"github.com/nebula-chat/chatengine/service/document/client"
 	"time"
+
+	"github.com/liuhuanqiang/chatengine/messenger/biz_server/biz/core"
+	"github.com/liuhuanqiang/chatengine/mtproto"
+	"github.com/liuhuanqiang/chatengine/service/document/client"
 )
 
 type PhotoModel struct {

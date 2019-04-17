@@ -19,8 +19,8 @@ package core
 
 import (
 	"github.com/golang/glog"
-	"github.com/nebula-chat/chatengine/pkg/util"
-	"github.com/nebula-chat/chatengine/service/idgen/client"
+	"github.com/liuhuanqiang/chatengine/pkg/util"
+	"github.com/liuhuanqiang/chatengine/service/idgen/client"
 )
 
 const (
@@ -90,7 +90,7 @@ func NextPtsId(key int32) (seq int64) {
 }
 
 func NextNPtsId(key int32, n int) (seq int64) {
-	seq, _ = seqIDGen.GetNextNSeqID(ptsUpdatesNgenId + util.Int32ToString(key), n)
+	seq, _ = seqIDGen.GetNextNSeqID(ptsUpdatesNgenId+util.Int32ToString(key), n)
 	return
 }
 
@@ -115,7 +115,7 @@ func NextChannelPtsId(key int32) (seq int64) {
 }
 
 func NextChannelNPtsId(key int32, n int) (seq int64) {
-	seq, _ = seqIDGen.GetNextNSeqID(channelPtsUpdatesNgenId + util.Int32ToString(key), n)
+	seq, _ = seqIDGen.GetNextNSeqID(channelPtsUpdatesNgenId+util.Int32ToString(key), n)
 	return
 }
 

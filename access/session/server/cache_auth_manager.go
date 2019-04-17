@@ -19,14 +19,15 @@ package server
 
 import (
 	"context"
-	"github.com/golang/glog"
-	"github.com/nebula-chat/chatengine/pkg/util"
-	"github.com/nebula-chat/chatengine/pkg/cache"
-	"github.com/nebula-chat/chatengine/pkg/grpc_util"
-	"github.com/nebula-chat/chatengine/pkg/grpc_util/service_discovery"
-	"github.com/nebula-chat/chatengine/mtproto"
-	"time"
 	"fmt"
+	"time"
+
+	"github.com/golang/glog"
+	"github.com/liuhuanqiang/chatengine/mtproto"
+	"github.com/liuhuanqiang/chatengine/pkg/cache"
+	"github.com/liuhuanqiang/chatengine/pkg/grpc_util"
+	"github.com/liuhuanqiang/chatengine/pkg/grpc_util/service_discovery"
+	"github.com/liuhuanqiang/chatengine/pkg/util"
 )
 
 type cacheAuthValue struct {
@@ -198,7 +199,7 @@ func (c *cacheAuthManager) PutPushSessionID(authKeyId, sessionId int64) {
 func (c *cacheAuthManager) GetFutureSaltList(authKeyId int64) ([]*mtproto.TLFutureSalt, bool) {
 	var (
 		cacheK = util.Int64ToString(authKeyId)
-		date = int32(time.Now().Unix())
+		date   = int32(time.Now().Unix())
 	)
 
 	v, ok := c.cache.Get(cacheK)
@@ -292,7 +293,7 @@ func getCacheApiLayer(authKeyId int64) int32 {
 }
 
 func uploadInitConnection(authKeyId int64, layer int32, ip string, initConnection *TLInitConnectionExt) error {
-	session := &mtproto.TLClientSessionInfo { Data2: &mtproto.ClientSession_Data{
+	session := &mtproto.TLClientSessionInfo{Data2: &mtproto.ClientSession_Data{
 		AuthKeyId:      authKeyId,
 		Ip:             ip,
 		Layer:          layer,
@@ -346,4 +347,3 @@ func getFutureSalts(authKeyId int64, num int32) ([]*mtproto.TLFutureSalt, error)
 
 	return cacheSalts, nil
 }
-

@@ -18,14 +18,14 @@
 package bot
 
 import (
-	"github.com/nebula-chat/chatengine/messenger/biz_server/biz/core"
+	"github.com/liuhuanqiang/chatengine/messenger/biz_server/biz/core"
 )
 
 type botsDAO struct {
 }
 
 type BotModel struct {
-	dao                   *botsDAO
+	dao *botsDAO
 }
 
 func (m *BotModel) InstallModel() {

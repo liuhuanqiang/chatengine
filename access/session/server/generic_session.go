@@ -18,13 +18,14 @@
 package server
 
 import (
-	"github.com/nebula-chat/chatengine/mtproto/rpc"
-	"github.com/nebula-chat/chatengine/mtproto"
-	"github.com/nebula-chat/chatengine/pkg/grpc_util"
-	"github.com/golang/glog"
 	"reflect"
-	"github.com/nebula-chat/chatengine/pkg/util"
 	"time"
+
+	"github.com/golang/glog"
+	"github.com/liuhuanqiang/chatengine/mtproto"
+	"github.com/liuhuanqiang/chatengine/mtproto/rpc"
+	"github.com/liuhuanqiang/chatengine/pkg/grpc_util"
+	"github.com/liuhuanqiang/chatengine/pkg/util"
 )
 
 type genericSession struct {
@@ -67,7 +68,7 @@ func (c *genericSession) onMessageData(id ClientConnID, cntl *zrpc.ZRpcControlle
 		c.pendingMessages = []*pendingMessage{}
 	}
 
- 	if len(c.rpcMessages) > 0 {
+	if len(c.rpcMessages) > 0 {
 		c.cb.sendToRpcQueue(&rpcApiMessages{connID: id, cntl: cntl, sessionId: c.sessionId, rpcMessages: c.rpcMessages})
 		c.rpcMessages = []*networkApiMessage{}
 	}
@@ -309,7 +310,7 @@ func (c *genericSession) onRpcRequest(connID ClientConnID, cntl *zrpc.ZRpcContro
 				glog.Error("not found authUserId by authKeyId: ", c.cb.getAuthKeyId())
 				// 401
 				rpcError := &mtproto.TLRpcError{Data2: &mtproto.RpcError_Data{
-					ErrorCode: 401,
+					ErrorCode:    401,
 					ErrorMessage: "AUTH_KEY_INVALID",
 				}}
 				// _ = rpcError
@@ -339,7 +340,7 @@ func (c *genericSession) onInvokeRpcRequest(authUserId int32, authKeyId int64, l
 	glog.Infof("genericSession]]>> - receive data: {sess: %s, session_id: %d, conn_id: %d, md: %s, data: {%v}}",
 		c, requests.sessionId, requests.connID, requests.cntl, requests.rpcMessages)
 
-	return invokeRpcRequest(authUserId, authKeyId, layer, requests, func() *grpc_util.RPCClient{ return c.RPCClient })
+	return invokeRpcRequest(authUserId, authKeyId, layer, requests, func() *grpc_util.RPCClient { return c.RPCClient })
 }
 
 func (c *genericSession) onRpcResult(rpcResults *rpcApiMessages) {
