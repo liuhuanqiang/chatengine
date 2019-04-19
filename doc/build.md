@@ -54,15 +54,15 @@ to see current running containers run the following command
 $ docker ps
 ```
 
-# build nebula-chat
+# build liuhuanqiang
 
 
-### get nebula-chat
+### get liuhuanqiang
 
 ```
-$ mkdir $GOPATH/src/github.com/nebula-chat
-$ cd $GOPATH/src/github.com/nebula-chat
-$ git clone https://github.com/nebula-chat/chatengine.git
+$ mkdir $GOPATH/src/github.com/liuhuanqiang
+$ cd $GOPATH/src/github.com/liuhuanqiang
+$ git clone https://github.com/liuhuanqiang/chatengine.git
 ```
 
 ### create DB schema
@@ -74,22 +74,22 @@ $ docker exec -it mysql-docker sh -c 'exec mysql -u root -p -e"CREATE DATABASE c
  
  1- if root password does not set for mysql container:
  ```
- $ docker exec -i mysql-docker mysql --user=root chatengine < $GOPATH/src/github.com/nebula-chat/chatengine/scripts/chatengine.sql
+ $ docker exec -i mysql-docker mysql --user=root chatengine < $GOPATH/src/github.com/liuhuanqiang/chatengine/scripts/chatengine.sql
  ```
  
  2- if root password is set:
 ```
-$ docker exec -i mysql-docker mysql --user=root --password=my-secret-pw chatengine < $GOPATH/src/github.com/nebula-chat/chatengine/scripts/chatengine.sql
+$ docker exec -i mysql-docker mysql --user=root --password=my-secret-pw chatengine < $GOPATH/src/github.com/liuhuanqiang/chatengine/scripts/chatengine.sql
 ```
 note: ***my-secret-pw*** is the same as defined in run mysql container section
 
 ##### 2. set custom password in config files
 if password is empty ignore this section otherwise add password to the following files
 ```
-$ $GOPATH/src/github.com/nebula-chat/chatengine/messenger/biz_server/biz_server.toml
-$ $GOPATH/src/github.com/nebula-chat/chatengine/messenger/sync/sync.toml
-$ $GOPATH/src/github.com/nebula-chat/chatengine/service/document/document.toml
-$ $GOPATH/src/github.com/nebula-chat/chatengine/service/auth_session/auth_session.toml
+$ $GOPATH/src/github.com/liuhuanqiang/chatengine/messenger/biz_server/biz_server.toml
+$ $GOPATH/src/github.com/liuhuanqiang/chatengine/messenger/sync/sync.toml
+$ $GOPATH/src/github.com/liuhuanqiang/chatengine/service/document/document.toml
+$ $GOPATH/src/github.com/liuhuanqiang/chatengine/service/auth_session/auth_session.toml
 ```
 set ***my-secret-pw*** in mysql dsn as follow:
 ```
@@ -108,56 +108,56 @@ dsn = "root:my-secret-pw@/chatengine?charset=utf8"
  
 ### build frontend
 ```
-$ cd $GOPATH/src/github.com/nebula-chat/chatengine/access/frontend
+$ cd $GOPATH/src/github.com/liuhuanqiang/chatengine/access/frontend
 $ go build
 ```
 
 ### build session
 ```
-$ cd $GOPATH/src/github.com/nebula-chat/chatengine/access/session
+$ cd $GOPATH/src/github.com/liuhuanqiang/chatengine/access/session
 $ go build
 ```
 
 ### build auth_key
 ```
-$ cd $GOPATH/src/github.com/nebula-chat/chatengine/access/auth_key
+$ cd $GOPATH/src/github.com/liuhuanqiang/chatengine/access/auth_key
 $ go build
 ```
 
 ### build auth_session
 ```
-$ cd $GOPATH/src/github.com/nebula-chat/chatengine/service/auth_session
+$ cd $GOPATH/src/github.com/liuhuanqiang/chatengine/service/auth_session
 $ go build
 ```
 
 ### build sync
 ```
-$ cd $GOPATH/src/github.com/nebula-chat/chatengine/messenger/sync
+$ cd $GOPATH/src/github.com/liuhuanqiang/chatengine/messenger/sync
 $ go build
 ```
 
 ### build upload
 ```
-$ cd $GOPATH/src/github.com/nebula-chat/chatengine/messenger/upload
+$ cd $GOPATH/src/github.com/liuhuanqiang/chatengine/messenger/upload
 $ go build
 ```
 
 ### build document
 ```
-$ cd $GOPATH/src/github.com/nebula-chat/chatengine/service/document
+$ cd $GOPATH/src/github.com/liuhuanqiang/chatengine/service/document
 $ go build
 ```
 
 ### build biz_server
 ```
-$ cd $GOPATH/src/github.com/nebula-chat/chatengine/messenger/biz_server
+$ cd $GOPATH/src/github.com/liuhuanqiang/chatengine/messenger/biz_server
 $ go build
 ```
 
 ### set DcOptions
 in the following file 
 ```
-$ $GOPATH/src/github.com/nebula-chat/chatengine/messenger/biz_server/config.json
+$ $GOPATH/src/github.com/liuhuanqiang/chatengine/messenger/biz_server/config.json
 ```
 replace ipAddress by your IP
 ```
@@ -174,30 +174,30 @@ replace ipAddress by your IP
 ```
 
 
-### run nebula-chat modules
+### run liuhuanqiang modules
 ```
-$ cd $GOPATH/src/github.com/nebula-chat/chatengine/service/auth_session
+$ cd $GOPATH/src/github.com/liuhuanqiang/chatengine/service/auth_session
 $ ./auth_session
 
-$ cd $GOPATH/src/github.comnebula-chat/chatengine/service/document
+$ cd $GOPATH/src/github.comliuhuanqiang/chatengine/service/document
 $ ./document
 
-$ cd $GOPATH/src/github.com/nebula-chat/chatengine/messenger/sync
+$ cd $GOPATH/src/github.com/liuhuanqiang/chatengine/messenger/sync
 $ ./sync
 
-$ cd $GOPATH/src/github.com/nebula-chat/chatengine/messenger/upload
+$ cd $GOPATH/src/github.com/liuhuanqiang/chatengine/messenger/upload
 $ ./upload
 
-$ cd $GOPATH/src/github.com/nebula-chat/chatengine/messenger/biz_server
+$ cd $GOPATH/src/github.com/liuhuanqiang/chatengine/messenger/biz_server
 $ ./biz_server
 
-$ cd $GOPATH/src/github.com/nebula-chat/chatengine/access/session
+$ cd $GOPATH/src/github.com/liuhuanqiang/chatengine/access/session
 $ ./session
 
-$ cd $GOPATH/src/github.com/nebula-chat/chatengine/access/auth_key
+$ cd $GOPATH/src/github.com/liuhuanqiang/chatengine/access/auth_key
 $ ./auth_key
 
-$ cd $GOPATH/src/github.com/nebula-chat/chatengine/access/frontend
+$ cd $GOPATH/src/github.com/liuhuanqiang/chatengine/access/frontend
 $ ./frontend
 ```
 

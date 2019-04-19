@@ -26,71 +26,71 @@ Open source [mtproto](https://core.telegram.org/mtproto) server written in golan
 
 - Get source code　
 ```
-mkdir $GOPATH/src/github.com/nebula-chat/
-cd $GOPATH/src/github.com/nebula-chat/
-git clone https://github.com/nebula-chat/chatengine.git
+mkdir $GOPATH/src/github.com/liuhuanqiang/
+cd $GOPATH/src/github.com/liuhuanqiang/
+git clone https://github.com/liuhuanqiang/chatengine.git
 
 ```
 
 - Build
     ```
     build frontend
-        cd $GOPATH/src/github.com/nebula-chat/chatengine/access/frontend
+        cd $GOPATH/src/github.com/liuhuanqiang/chatengine/access/frontend
         go build
     
     build auth_key
-        cd $GOPATH/src/github.com/nebula-chat/chatengine/access/auth_key
+        cd $GOPATH/src/github.com/liuhuanqiang/chatengine/access/auth_key
         go build
 
     build auth_session
-        cd $GOPATH/src/github.com/nebula-chat/chatengine/service/auth_session
+        cd $GOPATH/src/github.com/liuhuanqiang/chatengine/service/auth_session
         go build
         
     build sync
-        cd $GOPATH/src/github.com/nebula-chat/chatengine/messenger/sync
+        cd $GOPATH/src/github.com/liuhuanqiang/chatengine/messenger/sync
         go build
     
     build upload
-        cd $GOPATH/src/github.com/nebula-chat/chatengine/messenger/upload
+        cd $GOPATH/src/github.com/liuhuanqiang/chatengine/messenger/upload
         go build
     
     build document
-        cd $GOPATH/src/github.com/nebula-chat/chatengine/service/document
+        cd $GOPATH/src/github.com/liuhuanqiang/chatengine/service/document
         go build
 
     build biz_server
-        cd $GOPATH/src/github.com/nebula-chat/chatengine/messenger/biz_server
+        cd $GOPATH/src/github.com/liuhuanqiang/chatengine/messenger/biz_server
         go build
         
     build session
-        cd $GOPATH/src/github.com/nebula-chat/chatengine/access/session
+        cd $GOPATH/src/github.com/liuhuanqiang/chatengine/access/session
         go build
     ```
 
 - Run
     ```
-    cd $GOPATH/src/github.comnebula-chat/chatengine/service/auth_session
+    cd $GOPATH/src/github.comliuhuanqiang/chatengine/service/auth_session
     ./auth_session
     
-    cd $GOPATH/src/github.com/nebula-chat/chatengine/service/document
+    cd $GOPATH/src/github.com/liuhuanqiang/chatengine/service/document
     ./document
 
-    cd $GOPATH/src/github.com/nebula-chat/chatengine/messenger/sync
+    cd $GOPATH/src/github.com/liuhuanqiang/chatengine/messenger/sync
     ./sync
     
-    cd $GOPATH/src/github.com/nebula-chat/chatengine/messenger/upload
+    cd $GOPATH/src/github.com/liuhuanqiang/chatengine/messenger/upload
     ./upload
 
-    cd $GOPATH/src/github.com/nebula-chat/chatengine/messenger/biz_server
+    cd $GOPATH/src/github.com/liuhuanqiang/chatengine/messenger/biz_server
     ./biz_server
 
-    cd $GOPATH/src/github.com/nebula-chat/chatengine/access/auth_key
+    cd $GOPATH/src/github.com/liuhuanqiang/chatengine/access/auth_key
     ./auth_key
 
-    cd $GOPATH/src/github.com/nebula-chat/chatengine/access/session
+    cd $GOPATH/src/github.com/liuhuanqiang/chatengine/access/session
     ./session
     
-    cd $GOPATH/src/github.com/nebula-chat/chatengine/access/frontend
+    cd $GOPATH/src/github.com/liuhuanqiang/chatengine/access/frontend
     ./frontend
     ```
 
@@ -105,13 +105,13 @@ git clone https://github.com/nebula-chat/chatengine.git
 ### Compatible clients
 **Importents**: default signIn and signOut verify code is **12345**
 
-[Android client for NebulaChat](https://github.com/nebula-chat/clients/tree/master/Telegram-Android)
+[Android client for NebulaChat](https://github.com/liuhuanqiang/clients/tree/master/Telegram-Android)
 
-[FOSS client for NebulaChat](https://github.com/nebula-chat/clients/tree/master/Telegram-FOSS)
+[FOSS client for NebulaChat](https://github.com/liuhuanqiang/clients/tree/master/Telegram-FOSS)
 
-[iOS client for NebulaChat](https://github.com/nebula-chat/clients/tree/master/Telegram-iOS)
+[iOS client for NebulaChat](https://github.com/liuhuanqiang/clients/tree/master/Telegram-iOS)
 
-[tdesktop for NebulaChat](https://github.com/nebula-chat/clients/tree/master/tdesktop)
+[tdesktop for NebulaChat](https://github.com/liuhuanqiang/clients/tree/master/tdesktop)
 
 
 ### TODO

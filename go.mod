@@ -1,6 +1,6 @@
 module github.com/liuhuanqiang/chatengine
 
-replace github.com/liuhuanqiang/chatengine/service/auth_session => github.com/liuhuanqiang/chatengine/service/auth_session v0.0.0-20190418114752-0aedaed0da88
+replace github.com/liuhuanqiang/chatengine/service/auth_session => github.com/liuhuanqiang/chatengine/service/auth_session v0.0.0-20190419070324-686300c400cd
 
 require (
 	github.com/BurntSushi/toml v0.3.1
@@ -14,6 +14,9 @@ require (
 	github.com/gomodule/redigo v2.0.0+incompatible
 	github.com/grpc-ecosystem/go-grpc-middleware v1.0.0
 	github.com/jmoiron/sqlx v1.2.0
+	github.com/liuhuanqiang/chatengine/service/auth_session v0.0.0-20190419070324-686300c400cd
+	github.com/ttacon/builder v0.0.0-20170518171403-c099f663e1c2 // indirect
+	github.com/ttacon/libphonenumber v1.0.1
 	golang.org/x/net v0.0.0-20190419010253-1f3472d942ba
 	google.golang.org/grpc v1.20.1
 )
