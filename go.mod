@@ -1,6 +1,9 @@
 module github.com/liuhuanqiang/chatengine
 
-replace github.com/liuhuanqiang/chatengine/service/auth_session => github.com/liuhuanqiang/chatengine/service/auth_session v0.0.0-20190419070324-686300c400cd
+replace (
+	github.com/liuhuanqiang/chatengine/service/auth_session => github.com/liuhuanqiang/chatengine/service/auth_session v0.0.0-20190419070324-686300c400cd
+	google.golang.org/grpc => github.com/grpc/grpc-go v1.20.1
+)
 
 require (
 	github.com/BurntSushi/toml v0.3.1
