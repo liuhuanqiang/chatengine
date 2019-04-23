@@ -1,6 +1,5 @@
-FROM golang:1.12.4-stretch
+FROM golang:latest
 
-RUN apk add bash git gcc g++ libc-dev
 
 RUN apt-get update && apt-get install -y supervisor
 

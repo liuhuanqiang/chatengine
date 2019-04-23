@@ -1,0 +1,20 @@
+[Unit]
+Description=chatengine
+After=autorun.service
+Requires=autorun.service
+
+[Service]
+Restart=always
+RestartSec=30
+TimeoutStartSec=0
+ExecStartPre=-/usr/bin/docker stop chatengine
+ExecStartPre=-/usr/bin/docker kill chatengine
+ExecStartPre=-/usr/bin/docker rm chatengine
+ExecStartPre=-/home/core/docker/shell/install_fleetctl chatengine
+ExecStartPre=-/usr/bin/docker network create nginx-network
+ExecStart=/usr/bin/docker run --name chatengine --net=nginx-network -p 12345:12345 -v /home/core/chatengine_log:/log -v /home/core/data/chatengine/default_conf:/chatengine/conf ivories/chatengine
+ExecStop=/usr/bin/docker stop chatengine
+ExecStop=/usr/bin/docker kill chatengine
+
+[Install]
+WantedBy=multi-user.target

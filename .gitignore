@@ -44,3 +44,11 @@ messenger/sync/biz/dal/dalgen/nebula-dal-generator
 messenger/sync/biz/dal/dalgen/nebula-dal-generator
 messenger/biz_server/biz/dal/dalgen/nebula-dal-generator
 pkg/crypto/tools/fingerprint
+bin/auth_key
+bin/auth_session
+bin/biz_server
+bin/document
+bin/frontend
+bin/session
+bin/sync
+bin/upload
