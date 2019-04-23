@@ -19,7 +19,7 @@ tTL = "10s"
 
 [[redis]]
 name = "cache"
-addr = "127.0.0.1:6379"
+addr = "192.168.3.125:6379"
 idle = 100
 active = 100
 dialTimeout = "1s"
@@ -31,12 +31,12 @@ password = ""
 
 [[mysql]]
 name = "immaster"
-dsn = "root:yellow@tcp(127.0.0.1:3306)/chatengine?charset=utf8mb4"
+dsn = "root:yellow@tcp(192.168.3.125:3306)/chatengine?charset=utf8mb4"
 active = 5
 idle = 2
 
 [[mysql]]
 name = "imslave"
-dsn = "root:yellow@tcp(127.0.0.1:3306)/chatengine?charset=utf8mb4"
+dsn = "root:yellow@tcp(192.168.3.125:3306)/chatengine?charset=utf8mb4"
 active = 5
 idle = 2
