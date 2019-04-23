@@ -12,7 +12,7 @@ ExecStartPre=-/usr/bin/docker kill chatengine
 ExecStartPre=-/usr/bin/docker rm chatengine
 ExecStartPre=-/home/core/docker/shell/install_fleetctl chatengine
 ExecStartPre=-/usr/bin/docker network create nginx-network
-ExecStart=/usr/bin/docker run --name chatengine --net=nginx-network -p 12345:12345 -p 10004:10004  -p 10002:10002 -p 10009:10009 -p 10010:10010 -v /home/core/chatengine_log:/log -v /home/core/data/chatengine/default_conf:/chatengine/conf ivories/chatengine
+ExecStart=/usr/bin/docker run --name chatengine --net=nginx-network -p 12345:12345 -p 10000:10000 -p 10002:10002 -p 10004:10004 -p 10005:10005  -p 10009:10009 -p 10010:10010 -v /home/core/chatengine_log:/log -v /home/core/data/chatengine/default_conf:/chatengine/conf ivories/chatengine
 ExecStop=/usr/bin/docker stop chatengine
 ExecStop=/usr/bin/docker kill chatengine
 
