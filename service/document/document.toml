@@ -12,8 +12,8 @@ addr = "0.0.0.0:10009"
 [rpcServer.rpcDiscovery]
 serviceName = "document"
 nodeID = "node1"
-rPCAddr = "127.0.0.1:10009"
-etcdAddrs = ["http://127.0.0.1:2379"]
+rPCAddr = "192.168.3.125:10009"
+etcdAddrs = ["http://192.168.3.125:2379"]
 interval = "2s"
 tTL = "10s"
 

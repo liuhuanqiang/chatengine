@@ -10,7 +10,7 @@ addr = "0.0.0.0:30005"
 [discovery]
 serviceName = "test_server"
 nodeID = "node1"
-rPCAddr = "127.0.0.1:30005"
-etcdAddrs = ["http://127.0.0.1:2379"]
+rPCAddr = "192.168.3.125:30005"
+etcdAddrs = ["http://192.168.3.125:2379"]
 interval = "2s"
 tTL = "10s"

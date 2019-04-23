@@ -4,7 +4,7 @@ ver = "0.0.1"
 #logPath = "/tmp/biz_server.log"
 
 serverId = 1
-relayIp = "127.0.0.1"
+relayIp = "192.168.3.125"
 
 [rpcServer]
 addr = "0.0.0.0:10001"
@@ -12,8 +12,8 @@ addr = "0.0.0.0:10001"
 [rpcServer.rpcDiscovery]
 serviceName = "biz"
 nodeID = "node1"
-rPCAddr = "127.0.0.1:10001"
-etcdAddrs = ["http://127.0.0.1:2379"]
+rPCAddr = "192.168.3.125:10001"
+etcdAddrs = ["http://192.168.3.125:2379"]
 interval = "2s"
 tTL = "10s"
 
@@ -24,27 +24,27 @@ tTL = "10s"
 
 [nbfsRpcClient]
 serviceName = "document"
-etcdAddrs = ["http://127.0.0.1:2379"]
+etcdAddrs = ["http://192.168.3.125:2379"]
 balancer = "round_robin"
 
 [syncRpcClient1]
 serviceName = "sync"
-etcdAddrs = ["http://127.0.0.1:2379"]
+etcdAddrs = ["http://192.168.3.125:2379"]
 balancer = "round_robin"
 
 [syncRpcClient2]
 serviceName = "sync2"
-etcdAddrs = ["http://127.0.0.1:2379"]
+etcdAddrs = ["http://192.168.3.125:2379"]
 balancer = "round_robin"
 
 [authSessionRpcClient]
 serviceName = "auth_session"
-etcdAddrs = ["http://127.0.0.1:2379"]
+etcdAddrs = ["http://192.168.3.125:2379"]
 balancer = "round_robin"
 
 [botsRpcClient]
 serviceName = "bots"
-etcdAddrs = ["http://127.0.0.1:2379"]
+etcdAddrs = ["http://192.168.3.125:2379"]
 balancer = "round_robin"
 
 [[redis]]

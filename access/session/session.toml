@@ -12,29 +12,29 @@ addr = "0.0.0.0:10000"
 [server.discovery]
 serviceName = "session"
 nodeID = "node1"
-rPCAddr = "127.0.0.1:10000"
-etcdAddrs = ["http://127.0.0.1:2379"]
+rPCAddr = "192.168.3.125:10000"
+etcdAddrs = ["http://192.168.3.125:2379"]
 interval = "2s"
 tTL = "10s"
 
 [authSessionRpcClient]
 serviceName = "auth_session"
-etcdAddrs = ["http://127.0.0.1:2379"]
+etcdAddrs = ["http://192.168.3.125:2379"]
 balancer = "round_robin"
 
 [bizRpcClient]
 serviceName = "biz"
-etcdAddrs = ["http://127.0.0.1:2379"]
+etcdAddrs = ["http://192.168.3.125:2379"]
 balancer = "round_robin"
 
 [nbfsRpcClient]
 serviceName = "upload"
-etcdAddrs = ["http://127.0.0.1:2379"]
+etcdAddrs = ["http://192.168.3.125:2379"]
 balancer = "round_robin"
 
 [syncRpcClient]
 serviceName = "sync2"
-etcdAddrs = ["http://127.0.0.1:2379"]
+etcdAddrs = ["http://192.168.3.125:2379"]
 balancer = "round_robin"
 
 [[redis]]
