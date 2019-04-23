@@ -39,7 +39,7 @@ balancer = "round_robin"
 
 [[redis]]
 name = "cache"
-addr = "127.0.0.1:6379"
+addr = "192.168.3.125:6379"
 idle = 100
 active = 100
 dialTimeout = "1s"
