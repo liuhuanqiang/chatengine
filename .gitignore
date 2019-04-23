@@ -52,3 +52,4 @@ bin/frontend
 bin/session
 bin/sync
 bin/upload
+go.sum
